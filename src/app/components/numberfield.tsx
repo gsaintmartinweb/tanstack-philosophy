@@ -10,6 +10,7 @@ export default function NumberField({ label }: { label: string }) {
                 <h1 className="font-bold">{label}</h1>
                 <input
                     value={field.state.value}
+                    type="number"
                     className="w-full border border-gray-300 rounded-md p-2"
                     onChange={(e) => field.handleChange(Number(e.target.value))}
                 />

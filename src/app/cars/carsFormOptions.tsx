@@ -5,7 +5,7 @@ import { z } from "zod";
 export const carSchema = z.object({
     brand: z.string().min(2, 'Brand name is required').nonempty(),
     model: z.string().min(1, 'Model name is required'),
-    year: z.number().min(1886, 'Year is required'),
+    year: z.number().min(1886, 'Le modèle le plus ancien a été mis en circulation en 1886'),
     color: z.string().min(1, 'Color is required'),
     price: z.number().min(1, 'Price is required'),
     performance: z.object({
